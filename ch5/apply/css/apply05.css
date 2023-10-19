@@ -15,12 +15,14 @@ img{
     max-width: 100%;
     display: block;
 
+
+    
     /*style rules for mobile viewport*/
 
 
     /*Style rule to hide tablet-desk class*/
 }
-div{
+.tablet-desk{
     display: none;
 }
 /* Style rule for header */

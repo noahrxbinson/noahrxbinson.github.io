@@ -32,23 +32,17 @@ body {
 .relative
 {
     position: relative;
-    top: 90px;
-    left: 30px;
+    top: 150px;
+    left: 1200px;
 
 }
 
 /* fixed */
 .fixed{
     position: fixed;
-    top: 500px;
-    right: 10px;
+    top: 40px;
+    right: 6px;
 
 }
 
 /* absolute */
-.absolute
-{
-    position: absolute;
-    bottom: 100;
-    right: 200;
-}
