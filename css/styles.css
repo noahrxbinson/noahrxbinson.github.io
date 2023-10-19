@@ -3,33 +3,72 @@ Noah Robinson
 10-11-2023
 styles.css
 */
-body, header, nav, main, footer, h1, div, img, a
+body, header, nav, main, footer, h1, div, img, a,ul
 {
-
+	margin: 0;
+	padding: 0;
+	border: 0;
 
 }
-.img{
+header{
+    font-family: 'Pacifico', cursive;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+	height: 190px;
+    color: #fff;
+}
+
+img{
+    border: 2px solid #000;
+    border-radius: 3px;
     
     max-width: 100%;
     display: block;
     
 }
+/*
 .center {
     margin-left: auto;
     margin-right: auto;
     display:block;
 }
-.nav
+*/
+nav
 {
+  
+    color: #000;
+    padding: 1%;
+    margin-bottom: 1%;
     list-style-type: none;
 }
-#text
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+    font-size: 1.5em;
+    border-top: 1px solid #fff;
+}
+/*#text
 {
     font-family: "Brush Script MT";
     
 }
+
 a{
     text-decoration: none;
     color:black;
     font-weight: bold;
 }
+*/
+.mobile{
+    display: block;
+
+}
+.lists{
+    font-family: 'Pacifico', cursive;
+
+}
+
