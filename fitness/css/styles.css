@@ -1,0 +1,277 @@
+*
+Author: noah robinson
+Date: september 21, 2023*/
+
+body, header, nav, main, footer, h1, div, img, ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+body{
+	background-color: #000;
+}
+
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+/*style rules for mobile viewport*/
+header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #000;
+	height: 190px;
+	
+}
+
+
+header img {
+	margin: 0 auto;
+
+}
+
+
+nav{
+    padding: 1%;
+    margin-bottom: 1%;
+	
+}
+
+main{
+
+	background-color: #fff;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: 'Roboto Slab', serif;
+}
+.tel-link{
+	background-color: #404040;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+.tel link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+.hours{
+	margin-left: 10%;
+}
+.action{
+	font-size: 1.35em;
+	color: #666600;
+	font-weight: bold;
+}
+.external-link{
+	text-decoration: none;
+}
+
+#weights, #cardio, #training{
+
+	margin: 0 2%;
+}
+.round{
+    border-radius: 8px;
+}
+
+
+
+.external-link{
+	color: #666600;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#contact{
+	text-align: center;
+}
+#contact .contact-email-link{
+	text-decoration: none;
+	color: #660; 
+}
+
+.map{
+	border: 2px solid #000;
+	width: 95%;
+	height: 50%;
+}
+	
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+nav li{
+	
+	font-size: 1.5em;
+	font-family: 'Francis One', sans-serif;
+	border-top: 1px solid #fff;
+	
+}
+nav li:first-child {
+	border-top: none;
+}
+nav li a{
+	display: block;
+	color: #fff;
+	
+	padding: .5em 1em;
+	text-decoration: none;
+}
+nav li a:hover{
+	color: #000;
+	background-color: #fff;
+}
+.mobile{
+	display: block;
+}
+.tablet-desktop {
+	display: none;
+}
+
+/*media query doe tablet viewport*/
+@media screen and (min-width: 630px), print{
+    /*Tablet viewport: show tablet-desktop class, hide mobile class*/
+    .tablet-desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+
+    /*for tablet viewport: header*/
+    header{
+        position: static;
+        padding-bottom: 2%;
+    }
+    /*tablet viewport: nav*/
+    nav li{
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+    nav li:last-child{
+        border-right:none;
+    }
+    nav li a{
+        padding: 0.1em 0.75em;
+    }
+
+    /*tablet viewport: main*/
+    main ul{
+        margin: 0 0 4% 10%;
+    }
+
+    #excersises{
+	
+	border-top: 1px solid #000;
+	border-bottom: 1 px solid #000;
+	background-color: #f2f2f2;
+	padding: 1% 2%;
+	background: linear-gradient(to right,#ccc, #fff);
+	
+} 
+#excersises dt{
+	font-weight: bold;
+}
+#excersises dd{
+	padding: .5% 1% 2% 0;
+}
+
+.tel-num{
+	font-size:1.25em;
+}
+
+.map{
+	width: 600px;
+	height: 450px;
+}
+}
+
+/*Media query for desktop viewport*/
+@media screen and (min-width: 1015px), print{
+	/*Desktop Viewport: header*/
+	header{
+		float: left;
+		width: 25%;
+		padding-bottom: 0;
+
+	}
+	/*Desktop Viewport: nav*/
+	nav{
+		float: right;
+		width: 70%;
+		margin: 4em 1em 0 0;
+	}
+	nav ul{
+		text-align: right;
+	}
+	nav li{
+		border: none;
+
+	}
+	nav li a{
+		padding: 0.5em 1em;
+	}
+	/*psuedo-classes:
+	:link unvisited
+	:visited been clicked
+	:hober mouse over it
+	:active moment when clicked*/
+	nav li a:hover{
+		color: #000;
+		background-color: #fff;
+	}
+	main{
+		clear: left;
+	}
+	main h1{
+		font-size: 1.8em;
+	}
+	#weights, #cardio, #training{
+		width: 29%;
+		float: left;
+		margin: 0 2%;
+	}
+	#excercises{
+		clear: left;
+	}
+}
+/*media query for large desktop viewport*/
+@media screen and (mind-width: 1921px){
+	#container{
+		width: 1920px;
+		margin: 0 auto;
+	}
+
+}
+/*Media query for ptiny */
+@media print{
+	body{
+	background-color: #fff; 
+	color: #000;
+	}
+
+}
+footer p{
+	font-size: 0.75em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+footer p {
+	color: #fff;
+	text-decoration: none;
+	
+}
+
+	
