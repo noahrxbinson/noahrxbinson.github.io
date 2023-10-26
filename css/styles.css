@@ -50,6 +50,7 @@ nav ul{
 nav li{
     font-size: 1.5em;
     border-top: 1px solid #fff;
+    text-align: center;
 }
 /*#text
 {
@@ -71,4 +72,23 @@ a{
     font-family: 'Pacifico', cursive;
 
 }
+/*tablet media query start*/
+@media screen and (min-width: 630px), print{
+    .tablet-desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+}/*end of tablet media query*/
 
+/*desktop media query start*/
+
+@media screen and (min-width: 760px) {
+    /*style rules for nav*/
+    nav ul a:hover{
+        color: #000;
+        background-color: #fff;
+    }
+    
+}/*end of desktop media querry*/
