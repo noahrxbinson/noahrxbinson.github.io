@@ -1,86 +1,96 @@
 /*
-Author:
+Student:
 Date:
 File Name: 
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, article, h2 {
+body, header, main, footer, h1, div {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Style rules for body */
+/* Style rule for body */
 body {
-	
-    background: linear-gradient(to left, #fe9972, #ffe5dc);
-    
+	background-color: #e4f1f6;
 }
 
-/* Style rules for mobile viewport */
-
-/* Style rule for the header element */
+/* Style rules for header */
 header {
-	font-family: Verdana, Arial, sans-serif;
-	margin: 1em;
+	padding: 2%;
 	text-align: center;
-    color: #341509;
 }
 
-/* Style rules for the main content  */
+h1 {
+    font-family: Verdana, Arial, serif;
+}
+
+/* Style rules for main content */
+
 main {
-    padding: 1%;
+    margin: 0 4%;
 }
 
-article {
-    background-color: #a22c02;
-    color: #ffe5dc;
-    padding: 2%;
-    margin: 2% 1%;
+.box {
     border: 1px solid #000;
+    height: 200px;
+    width: 200px;
 }
 
-/* Style rule for the footer element */
+/* Gradient style rules */
+
+/* Style rule for footer */
 footer {
-	font-size: .70em;
+	font-size: .90em;
 	text-align: center;
-    color: #341509;
+	padding: 2%;
+    clear: left;
 }
-/*media query for tablet viewport*/
-.table{
-    display: block;
+.gradient1{
+    background: linear-gradient(to right, #67afcb, #1a3e4c 25%);
 }
-.mobile{
-    display: none;
-}
-@media screen and (min-width: 481px)
-{
-    article{
-        width: 43%;
-        float: left;
-        height: 160px;
-    
-    }
-    footer{
-        float: left;
-    }
-}
-    /*media query for desktop viewport*/
-     @media screen and(min-width: 900px)
-    {
-        article
-        {
-            width: 27%;
-            height: 140px;
-        }
-        article:hover
-        {
-            background-color: #ffe5dc;
-            color: #a22c02;
-        }
-    }
-    
+.gradient2{
 
-            
-        
+    background: linear-gradient(to left, #d4f7ec, #448d76 90%);
+
+}
+.gradient3{
+
+    background: linear-gradient(to top left, #efddfd, #36065b);
+}
+.gradient4{
+    background: linear-gradient(to right, #e6e6ff, #70dbdb, #ffffcc, #cc6699);
+}
+.gradient5{
+    background: linear-gradient(#df80ff 10%, #ccffff 20%);
+}
+.gradient6{
+    background: linear-gradient(to right, rgba(0,0,153,0) 25%, rgba(0,0,153,1));
+}
+.gradient7{
+    background: radial-gradient(#0000ff, #fff, #ff0000);
+    
+}
+.gradient8{
+    background: repeating-radial-gradient(#0000ff, #fff, #ff0000 15%);
+}
+
+/* Media Query for Tablet Viewports */
+@media screen and (min-width: 481px) {
+    
+    .columns {
+        width: 50%;
+        float: left;
+    }
+    
+}
+
+/* Media Query for Desktop Viewports */
+@media screen and (min-width: 1200px) {
+    
+    .columns {
+        width: 25%;
+    }
+    
+}
