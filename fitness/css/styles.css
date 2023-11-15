@@ -2,11 +2,12 @@
 Author: noah robinson
 Date: september 21, 2023*/
 
-body, header, nav, main, footer, h1, div, img, ul{
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside{
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
+
 
 
 body{
@@ -19,10 +20,13 @@ img{
 	display: block;
 }
 
+/*Style rule for box sizing applies to all elements*/
+*{
+	box-sizing: border-box;
+}
 /*style rules for mobile viewport*/
 header {
-	position: -webkit-sticky;
-	position: sticky;
+	
 	top: 0;
 	background-color: #000;
 	height: 190px;
@@ -49,6 +53,27 @@ main{
 	font-size: 1.15em;
 	font-family: 'Roboto Slab', serif;
 }
+.mobile h3{
+	text-shadow: 5px 5px 8px #ccc;
+}
+
+article{
+	 padding: 2%;
+
+}
+article h3{
+	text-align: center;
+}
+
+article img{
+	margin: 0 auto;
+}
+article ul{
+	margin-left: 10%;
+}
+article:nth-of-type(2){
+	background-color: rgba(204, 204, 204, .3);
+}
 .tel-link{
 	background-color: #404040;
 	padding: 2%;
@@ -70,6 +95,32 @@ main{
 	font-size: 1.35em;
 	color: #666600;
 	font-weight: bold;
+}
+.frame{
+	position: relative;
+	max-width: 450px;
+	margin: 2% auto;
+}
+.pic-text{
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+
+}
+aside{
+	text-align: center;
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: bold;
+	padding: 2%;
+
 }
 .external-link{
 	text-decoration: none;
@@ -104,7 +155,67 @@ main{
 	width: 95%;
 	height: 50%;
 }
+#form{
+	margin-top: 2%;
+	background-color: #f2f2f2;
+	padding: 2%;
+}
+
+#form h2{
+	text-align: center;
 	
+}
+fieldset, input, select, textarea{
+	margin-bottom: 2%;
+}
+fieldset legend{
+	font-weight: bold;
+	font-size: 1.25em;
+
+}
+label{
+	display: block;
+	padding-top: 3%;
+}
+form #submit{
+	margin: 0 auto;
+	border: none;
+	display: none;
+	padding: 2%;
+	background-color: #b3b3b3;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+/* tablet vieport style rules for tables */
+table {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+}
+	caption{
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 1%;
+	}
+	th, td {
+		border: 1px solid #000;
+		padding: 2%;
+	}
+	th{
+		background-color: #000;
+		color: #fff;
+		font-size: 1.15em;
+	}
+	th:nth-child(odd){
+		background-color: #ccc;
+	}
+
+	form{
+		width: 70%;
+		margin: 0 auto;
+	}
 nav ul{
 	list-style-type: none;
 	margin: 0;
@@ -150,7 +261,7 @@ nav li a:hover{
 
     /*for tablet viewport: header*/
     header{
-        position: static;
+        
         padding-bottom: 2%;
     }
     /*tablet viewport: nav*/
@@ -170,6 +281,31 @@ nav li a:hover{
     main ul{
         margin: 0 0 4% 10%;
     }
+
+	.grid{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	.pic-text{
+		font-size: 1em;
+		padding: 10px;
+	}
+	aside{
+		text-align: center;
+		font-size: 1.25em;
+		font-style: italic;
+		font-weight: bold;
+		padding: 2%;
+		background-color: rgba(204, 204, 204, 0.5);
+		box-shadow: 5px 5px 8px #000;
+		text-shadow: 5px 5px 5px #b3b3b3;
+		border-radius: 0 15px;
+	
+	}
+	.grid-item4{
+		grid-column: 1 / span 3;
+	}
 
     #excersises{
 	
@@ -195,7 +331,7 @@ nav li a:hover{
 	width: 600px;
 	height: 450px;
 }
-}
+
 
 /*Media query for desktop viewport*/
 @media screen and (min-width: 1015px), print{
@@ -237,6 +373,24 @@ nav li a:hover{
 	main h1{
 		font-size: 1.8em;
 	}
+	article h3{
+		font-size: 1.75em;
+		
+	}
+
+	.pic-text{
+		font-size: 1.5em;
+		float: left; 
+		margin: 0 2%;
+	}
+	.frame{
+		opacity: .9;
+
+	}
+	.frame:hover{
+		opacity: 1;
+		box-shadow: 8px 8px 10px #808080;
+	}
 	#weights, #cardio, #training{
 		width: 29%;
 		float: left;
@@ -245,12 +399,27 @@ nav li a:hover{
 	#excercises{
 		clear: left;
 	}
+	form{
+		width: auto;
+
+	}
+	.form-grid{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	.btn{
+		grid-column: 1 /span 3;
+	}
 }
 /*media query for large desktop viewport*/
 @media screen and (mind-width: 1921px){
 	#container{
 		width: 1920px;
 		margin: 0 auto;
+	}
+	table {
+		width: 80%;
 	}
 
 }
