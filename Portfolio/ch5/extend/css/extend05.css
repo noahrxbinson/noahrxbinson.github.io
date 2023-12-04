@@ -1,0 +1,48 @@
+/* 
+Style sheet created by: 
+Student's Name: noah robinson
+Today's Date: 1
+*/
+body {
+    background-color: #dde3fd;
+}
+
+#container {
+    padding-bottom: 500px;
+}
+
+.box {
+    border: 1px solid #000;
+    margin: 2%;
+    padding: 2%;
+    background-color: #798ef6;
+    color: #091034;
+    width: 400px;
+    height: 170px;
+}
+
+.sticky{
+    position: -webkit-sticky-;
+    position: sticky;
+    top: 0;
+}
+
+
+/* relative */
+.relative
+{
+    position: relative;
+    top: 150px;
+    left: 1200px;
+
+}
+
+/* fixed */
+.fixed{
+    position: fixed;
+    top: 40px;
+    right: 6px;
+
+}
+
+/* absolute */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- 
+Student's Name
+Current Date 
+-->
+<html lang="en">
+<head>
+	<title>Position</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/extend05.css">
+</head>
+<body>
+
+	<div id="container">
+    
+        <!-- Use the header area for the website name or logo -->
+        <header>
+            <h1>Working with Positions</h1>
+        </header>
+
+        <!-- Use the main area to add the main content of the webpage -->
+        <main>
+            
+            <div class="box sticky">
+                
+                <h2>Sticky</h2>
+                <p>This is an example of an element with a sticky position. Its position is based on the user's scroll position.</p>
+                <!-- Use the empty paragraph element below to briefly explain how to use the sticky position. -->
+                <p>First set the css position sticky to the element you want, then set the top property to 0</p>
+                
+            </div>
+            
+            <div class="box relative">
+                
+                <h2>Relative</h2>
+                <p>This is an example of an element with a relative position. It can move around a little, depending on the viewport, but it is in a position relative to itself.</p>
+                <!-- Use the empty paragraph element below to identify the values you used for the top and left properties and how it affected the relative box. -->
+                <p>i used 1200 for the left value and 150 for the top, this aligned it to the right of the page</p>
+                
+            </div>
+            
+            <div class="box fixed">
+            
+                <h2>Fixed</h2>
+                <p>This is an example of an element with a fixed position. Its position is relative to the viewport.</p>
+                <!-- Use the empty paragraph element below to identify the values you used for the top and right properties and how it affected the fixed box. -->
+                <p> i used 500px for the top value and 10px for the right value </p>
+                
+            </div>
+            
+            <div class="box absolute">
+                
+                <h2>Absolute</h2>
+                <p>This is an example of an element with an absolute position. It is similar to the fixed position; however, it is positioned relative to the closest parent element.</p>
+                <!-- Use the empty paragraph element below to identify the values you used for the bottom and right properties and how it affected the absolute box. -->
+                <p> i set the bottom value to 100 and the right value to 200, this fixed it to the left side of the page</p>
+                
+            </div>
+            
+        </main>
+
+	</div>
+	
+</body>
+</html>

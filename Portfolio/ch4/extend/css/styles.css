@@ -1,0 +1,101 @@
+/*
+Author: Maria Cruz
+Date: Current Date
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and header content */
+body {
+    background-color: #d9d9d9;
+}
+
+header, footer {
+    padding: 2%;
+    text-align: center;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    overflow: auto;
+}
+
+main p {
+    font-size: 1.25em;
+    padding: 2%;
+}
+
+main a {
+    color: #0000b3;
+    text-decoration: none;
+}
+
+#orange, #purple, #green {
+    display: block;
+    margin-bottom: 2%;
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+#questions {
+    clear: left;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+    display: inline-block;
+    padding-top: 5%;
+}
+
+/* Orange */
+
+.orange-hex {
+	background-color: #e34c10;
+}
+
+.orange-rgb
+{
+	background-color: rgb(227, 76, 16);
+}
+.orange-hsl
+{
+	background-color: hsl(17, 87%, 48%);
+}
+
+
+/* Purple */
+
+.purple-hex
+{
+	background-color: #802dd2;
+}
+.purple-rgb{
+	background-color: rgb(128, 45, 210)
+}
+.purple-hsl{
+	background-color: hsl(270, 65%, 50%)
+}
+
+
+
+/* Green */
+
+.green-hex{
+	background-color: #138613
+}
+.green-rgb{
+	background-color: rgb(19,134, 19)
+}
+.green-hsl{
+	background-color: hsl(120, 75%, 30%)
+}
