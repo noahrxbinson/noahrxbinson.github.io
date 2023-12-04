@@ -2,7 +2,7 @@
 Author: noah robinson
 Date: september 21, 2023*/
 
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside{
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -14,25 +14,7 @@ body{
 	background-color: #000;
 }
 
-
-img{
-	max-width: 100%;
-	display: block;
-}
-
-/*Style rule for box sizing applies to all elements*/
-*{
-	box-sizing: border-box;
-}
-/*style rules for mobile viewport*/
-header {
-	
-	top: 0;
-	background-color: #000;
-	height: 190px;
-	
-}
-
+--
 
 header img {
 	margin: 0 auto;
@@ -52,6 +34,11 @@ main{
 	padding: 2%;
 	font-size: 1.15em;
 	font-family: 'Roboto Slab', serif;
+}
+
+video{
+	margin: 0 auto 4%;
+	
 }
 .mobile h3{
 	text-shadow: 5px 5px 8px #ccc;
