@@ -1,0 +1,33 @@
+body, head, header, p, table, th, td, tbody, thead tr, th{
+
+
+}
+/*adding color to the table and shadowing*/
+table {
+    
+    border-color: #fd4d0c;
+    
+    box-shadow: 5px 5px 1px #792101;
+
+}
+/*the borders color of the entire graph*/
+tbody{
+    background-color: #ffe5dc;
+}
+/*changing the borders color*/
+
+/*Different shades of color throughout graphs rows*/
+tr:nth-child(odd) {
+     background-color: #fe9772;
+}
+/*The font sytyle*/
+body{
+    font-style: sans-serif;
+    
+
+}
+
+  th{
+    background-color: #792101;
+    color:ghostwhite;
+  }
