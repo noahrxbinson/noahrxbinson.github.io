@@ -13,10 +13,14 @@
 	</head> 
 	
 <body>
+	
 	<div class="mobile">
 	<header><h1>Facts about me. &#128158;</h1> </header>
-	<img src="images/portfolio3.jpg" alt="a picture taken in photobooth " class="center">
-
+	<figure>
+		<img src="images/portfolio3.jpg" alt="a picture taken in photobooth" class="center">
+		<figcaption>end global warming</figcaption>
+		</figure>
+	
 	<nav>
 		<ul>
 
@@ -29,7 +33,7 @@
 	</nav>
 	
 	<main>
-	<div id="info">
+	<article id="info">
 		<h3> My Favorite shows to watch from most favorite to least:</h3>
 		<ol>
 			<li> pretty little liars</li>
@@ -39,7 +43,87 @@
 			<li>Jessie</li>
 		</ol>
 
-    </div>
+		<table>
+			<caption>My favorite music artists </caption>
+			<thead>
+			<tr>
+				<th>Genre</th>
+				<th colspan="3">Artists</th>
+			</tr>
+			</thead>
+			<tr>
+				<th>R&B</th>
+				<td>Summer walker</td>
+				<td>Sza</td>
+				<td>Brent faiyaz</td>
+			</tr>
+			<tr>
+				<th>Alternative</th>
+				<td>Lana Del Rey</td>
+				<td>awfultune</td>
+				<td>The internet</td>
+			</tr>
+
+			<tr>
+				<th>Rap</th>
+				<td>Young nudy</td>
+				<td>City girls</td>
+				<td>Doja Cat</td>
+
+			</tr>
+		</table>
+
+		
+
+		<form>
+			<h2 class="contact">Please complete the form, hit submit when you're finished.</h2>
+			<fieldset>
+				<legend>Personal information</legend>
+				<label for="fName">First Name:</label>
+				<input type="text" id="fName" name="fName" required>
+
+				<label for="lName">Last name:</label>
+				<input type="text" id="lName" name="lName" required>
+
+				<label for="phone">Phone</label>
+				<input type="tel" id="phone" name="phone" required>
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Personal opinion</legend>
+				<p>I prefer this genre of music:</p>
+				<label for="opinion"><input type="checkbox" name="intrests" id="opinion" value="R&B">R&B</label>
+				<label for="opinion"><input type="checkbox" name="intrests" id="opinion" value="R&B">Alternative</label>
+				<label for="opinion"><input type="checkbox" name="intrests" id="opinion" value="R&B">Rock</label>
+				<label for="opinion"><input type="checkbox" name="intrests" id="opinion" value="R&B">Rap</label>
+			</fieldset>
+		
+			<fieldset>
+				<legend>Music streaming app</legend>
+			
+				<label for="musicapp">What app do you stream music from?</label>
+				<select name="musicapp" id="musicapp">
+					<option value="apple">Apple music</option>
+					<option value="spotify">Spotify</option>
+					<option value="musi">Musi</option>
+					<option value="sound">Soundcloud</option>
+					<option value="Tidal">Tidal</option>
+				</select>
+				<label for="more">Other:</label>
+
+				<textarea id="more" name="more" rows="3" cols="20"></textarea>
+			</fieldset>
+
+			<input type="submit" id="submit" value="submit" class="btn">
+		</form>
+
+
+    </article>
+</div>
+
+<div>
+
 </div>
 	</main>
 	
