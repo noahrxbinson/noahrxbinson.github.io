@@ -1,185 +1,408 @@
 /*
-Noah Robinson
-10-11-2023
-styles.css
-*/
-body, header, nav, main, footer, h1, div, img, a, ul, figure, figcaption, article, grid-container, table, th, td, form
-{
-	margin: 0;
-	padding: 0;
-	border: 0;
+Author: noah robinson
+Date: september 21, 2023*/
 
-
-}
-table, th, td{
-    border: 0.1em solid #000;
-    text-align: center;
-
+body, header, nav, main, footer, h1, h2, div, img, ul, figure, figcaption, section, article, aside, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-.grid-container {
-    display: grid;
-    gap: 50px;
-    column-gap: 50px;
-    row-gap: 50px;
-  }
-.grid{
-    display: grid;
-    grid-template-columns:auto auto auto auto auto auto;
-
-
-}
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-figcaption{
-    text-align: center;
-}
-header{
-    font-family: 'Pacifico', cursive;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #000;
-	height: 190px;
-    color: #fff;
-    text-shadow: 9px 9px 9px #ccc;
-    text-align: center;
+/* Style rules for body and images */
+body {
+	background-color: #000;
 }
 
-img{
-    border: 2px solid #000;
-    border-radius: 3px;
-    
+img {
     max-width: 100%;
     display: block;
-    
 }
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
-}
-.right {
-    display: block;
-    margin-left: auto;
-}
-
-nav
-{
-  
-    color: #000;
-    padding: 1%;
-    margin-bottom: 1%;
-    list-style-type: none;
-}
-nav ul{
-    list-style-type: none;
-    text-align: center;
-}
-nav li{
-    font-size: 1.5em;
-    border-top: 1px solid #fff;
-    text-align: center;
-}
-/*form styling start*/
-form{
-    width: 50%;
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
     margin: 0 auto;
-
+    width: 100%;
 }
-h2{
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+th, td{
+    border: 1px solid #000;
+    padding: 2%;
+}
+th{
+    background-color: #000;
+    color: #fff;
+    font-size: 1.15em;
+}
+tr:nth-child(odd){
+    background-color: #ccc;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box; 
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule for header */
+header {
+    top: 0; 
+    background-color: #000;
+    height: 190px;
+}
+
+header img {
+    margin: 0 auto;
+}
+
+/* Style rules for navigation area */
+nav {
+	padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
     text-align: center;
 }
 
-/*#text
-{
-    font-family: "Brush Script MT";
-    
+nav li {
+    font-size: 1.5em;
+    font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #fff;
 }
 
-a{
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
     text-decoration: none;
-    color:black;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for main content */
+main {
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.mobile h3 {
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+article {
+    padding: 2%;
+}
+
+article h3 {
+    text-align: center; 
+}
+
+article img {
+    margin: 0 auto;
+}
+
+article ul {
+    margin-left: 10%; 
+}
+
+article:nth-of-type(2) {
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
+.tel-link {
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.hours {
+    margin-left: 10%;
+}
+
+.action {
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px #ccc; 
+}
+
+.frame {
+    position: relative;
+    max-width: 450px; 
+    margin: 2% auto;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
     font-weight: bold;
 }
-*/
-.mobile{
-    display: block;
 
+#weights, #cardio, #training {
+    margin: 0 2%;
 }
-.lists{
-    font-family: 'Pacifico', cursive;
+
+
+.round {
+    border-radius: 8px;
+}
+
+.external-link {
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact {
     text-align: center;
-
 }
-/*mobile media query start*/
-@media screen and (max-width: 630px), print{
-    /*.tablet-desktop{
+
+#contact .contact-email-link {
+    color: #666600;
+    text-decoration: none;
+}
+
+.map {
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+}
+
+/* Style rules for footer content */
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+    
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
         display: block;
     }
-    .mobile{
+
+    .mobile {
         display: none;
-    }*/
-
-
-    /*start of table styling for mobile viewport*/
-    table, th, td{
-        border: 0.1em solid #000;
+    }
+    
+    /* Tablet Viewport: Style rule for header */
+    header {
+        padding-bottom: 2%;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+    
+    /* Tablet Viewport: Style rules for main content area */
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto; 
+        grid-gap: 20px;
+    }
+       
+    .pic-text {
+        font-size: 1em;  
+        padding: 10px; 
+    } 
+    
+    aside {
         text-align: center;
-    
+        font-size: 1.25em;
+        font-style: italic;
+        font-weight: bold;
+        padding: 2%;
+        background-color: rgba(204, 204, 204, 0.5); 
+        box-shadow: 5px 5px 8px #000;
+        text-shadow: 5px 5px 5px #b3b3b3;
+        border-radius: 0 15px; 
     }
-    form{
-        width: 50%;
-        margin: 0 auto;
     
+    .grid-item4 {
+        grid-column: 1 / span 3;
+    }
+        
+    #exercises {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background: linear-gradient(to right, #ccc, #fff);
+        background-color: #f2f2f2;
+        padding: 1% 2%;
     }
 
+    #exercises dt {
+        font-weight: bold;
+    }
+
+    #exercises dd {
+        padding: 0.5% 1% 2% 0;
+    } 
+    
+    .tel-num {
+        font-size: 1.25em;
+    }
+    
+    .map {
+        width: 600px;
+        height: 450px;
+    }
+    
 }
-/*end of mobile media query*/
 
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+    
+    /* Desktop Viewport: Style rule for header */
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+    
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
 
-/*desktop media query start*/
-@media screen and (min-width: 760px) {
-    /*style rules for nav*/
-    nav ul a:hover{
+    nav ul {
+        text-align: right;
+    }
+    
+    nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+    
+    nav li a:hover {
         color: #000;
         background-color: #fff;
     }
-    form{
-        width: 50%;
+    
+    /* Desktop Viewport: Style Rules for main content */
+    main {
+        clear: left;
+    }
+    
+    main h1 {
+        font-size: 1.8em;
+    }
+    
+    article h3 {
+        font-size: 1.75em; 
+    }
+    
+    .pic-text {
+        font-size: 1.5em;  
+        padding: 20px;
+    }
+    
+    .frame  {
+        opacity: 0.9; 
+    }
+    
+    .frame:hover {
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080; 
+    }
+    
+    #weights, #cardio, #training {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #exercises {
+        clear: left;
+    }
+    
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+ 
+    #container {
+        width: 1920px;
         margin: 0 auto;
-    
     }
     
-}
-.other{
-    text-shadow: 5px 5px 8px #000;
-}
-
-/*end of desktop media querry*/
-
-/* start of tablet media querry*/
-@media screen and (min-width: 760px) and (max-width: 1023px) {
-
-    table, th, td{
-        border: 0.1em solid #000;
-        text-align: center;
-    
+    table{
+        width: 80%;
     }
+}
 
-    nav ul a:hover{
-        color: #000;
+/* Media Query for Print */
+@media print {
+    
+    body {
         background-color: #fff;
+        color: #000;
     }
-    form{
-        width: 50%;
-        margin: 0 auto;
     
-    }
 }
+
+
+	
