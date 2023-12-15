@@ -3,28 +3,44 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title> Forward Fitness Club </title>
+	<title> Fitness Class Schedule | Forward Fitness Club </title>
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Forward fitness club has many fitness xlasses to meet your needs, including boot camp, cardio, kickboxing, spinning, yoga, and Zumba">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
-<body> 
-	
-	<div id="container">
-	<header> 
-		<h1> Forward Fitness Center </h1>
-	</header>
-	
-		<header> 
+
+
+<header id="ffc-logo"> 
 			<h1> Forward Fitness Center </h1>
 			<a href="index.html"> <img src="images/forward-fitness-logo.png"
 			alt="forward fitness club logo"></a>
-		</header>
-		<nav>
+		
+</header>
+
+
+<body>
+
+	<!-- Mobile Nav-->
+
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="classes.html">Classes</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+		<div id="container">
+		<nav class="tablet-desktop">
 		<ul>
 					<li><a href="index.html">Home </a></li>
 					<li><a href="about.html">About </a></li>
@@ -35,11 +51,11 @@
 		</nav>
 
         <!--classes hero image-->
-        <div id="hero" class="tablet-desktop">
+        <div  class="tablet-desktop">
         <img src="images/classes-hero-image.jpg" alt="group of fitness people">
         
         </div>
-	<main>
+	<main id="content">
 		
 		
 		<div id="hero" class="mobile">
@@ -111,16 +127,28 @@
 				Below is a sample of the type of music played duringa class workout.</h3>
 			<audio controls>
 				<source src="media/ffc_audio.mp3" type="audio/mp3">
-				<source src="media/ffc_audio.ogg" type="audio.ogg">
+				<source src="media/ffc_audio.ogg" type="audio/ogg">
 					<p>Your browser doesnt support the audio element.</p>
 			</audio>
 		</div>
-	</main>
+	</body>
+</main>
 	<footer> 
-		<p> &copy; Copyright 2023. All rights reserved, </p>
-		<p> forwardfitness@club.net</p>
-	
-	</footer>
+        <div class="copyright">
+    <p>&copy; Copyright 2023. All rights reserved, </p>
+    <P><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com.fwdfitclub" target="_blank">
+            <img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+            <a href="https://www.twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo-png" alt="black and white twitter logo"></a>
+    
+            
+    
+        
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
 	</div>
-</body>
+
 </html>

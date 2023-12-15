@@ -2,23 +2,40 @@
 
 <html lang="en">
 <head>
+	<title>Fitness Equipment - Personal Training | Forward Fitness Club</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Forward Fitness Club has state of the art fitness equipment fitness equipment and provides personal training.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body> 
-		<div id="container">
-		<header> 
+		
+		<header id="ffc-logo"> 
 			<h1> Forward Fitness Center </h1>
 			<a href="index.html"> <img src="images/forward-fitness-logo.png"
 				alt="forward fitness club logo"></a>
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 		</header>
+		<div id="container">
+			<!-- Mobile Nav-->
+
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About Us</a>
+				<a href="classes.html">Classes</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
 		
-		<nav>
+		<nav class="tablet-desktop">
 <ul>
 					<li><a href="index.html">Home </a></li>
 					<li><a href="about.html">About Us</a></li>
@@ -27,18 +44,18 @@
 					<li><a href="contact.html">Contact us</a></li>
 			</ul>
 		</nav>
-		<main>
-			<video controls poster="images/hero-image.jpg">
-			<source src="media/ffc_video.mp4" type="video/mp4">
-			<source src="media/ffc_video.webm" type="video/webm">
-			<track src="media/captions.vtt" kind="captions" srclanf="en" label="Captions">
-			<track src="media/descriptions.vtt" kind="captions" srclang="en" label="English Descriptions">
-			<p>Your browser does not support the video element.</p>
-
-
-
-		</video>
 		
+		<main id="content">
+			<video controls poster="images/hero-image.jpg">
+				<source src="media/ffc_video.mp4" type="video/mp4">
+				<source src="media/ffc_video.webm" type="video/webm">
+				<track src="media/captions.vtt" kind="captions" srclanf="en" label="Captions">
+				<track src="media/descriptions.vtt" kind="captions" srclang="en" label="English Descriptions">
+				<p>Your browser does not support the video element.</p>
+	
+	
+	
+			</video>
 			
 			
 	
@@ -78,15 +95,25 @@
 					<p>The following are common excersises that we encourage our clients to do as part of their daily excersise routine.</p>
 					<dl>
 						<dt>Burpee</dt>
-						<dd>Burpee are great, full body excersise to increase your strength and endourance, Begin in a standing position, drop into a squat 
+							<dd>Burpee are great, full body excersise to increase your strength and endourance, Begin in a standing position, drop into a squat 
 						and extend your hands forward, kick your feet back and then forward, 
-						again quickly, and then jump up from a squtted position</dd>
+						again quickly, and then jump up from a squtted position. <span class="viewex" onclick="burpees()"> View Example.</span></dd>
 						<dt>Plank</dt>
-						<dd>Planks build your core strength. to perform a plank, get in a push up position and rest your forearms on the floor, Hold the position as long as you can</dd>
+							<dd>Planks build your core strength. to perform a plank, get in a push up position and rest your forearms on the floor, Hold the position 
+								as long as you can. <span class="viewex" onclick="plank()"> View Example</span></dd>
 						<dt>Mountain Climber</dt>
-						<dd> Mountain Climbers are a good cardio excersise. Place your hands n the floor in a push up position, then bring
-						one knee up to your chest and then switch as quickly as you can(as though you are climbing a mountain)</dd>
+							<dd> Mountain Climbers are a good cardio excersise. Place your hands n the floor in a push up position, then bring
+							one knee up to your chest and then switch as quickly as you can
+							(as though you are climbing a mountain). <span class="viewex" onclick="mountain()"> View Example.</span></dd>
 						</dl>
+
+						<video controls id="example">
+							<source id="vid-src" src="vid" type="video/mp4">
+
+							<track id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions">
+
+							<p>Your browser does not support the video element</p>
+						</video>
 						
 						</div>
 						
@@ -96,11 +123,21 @@
 		
  </div>
 </main>
-	<footer> 
-	<p>&copy; Copyright 2023. All rights reserved, </p>
-	<p><a href:"malito:forwardfitness@club.net">forwardfitness@club.net</a></p>
-	<P> forwardfitness@club.net</p>
+<footer> 
+	<div class="copyright">
+<p>&copy; Copyright 2023. All rights reserved, </p>
+<P><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+	</div>
+	<div class="social">
+		<a href="https://www.facebook.com.fwdfitclub" target="_blank">
+		<img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+		<a href="https://www.twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo-png" alt="black and white twitter logo"></a>
+
+		
+
 	
-	</footer>
+	</div>
+</footer>
+	<script src="scripts/script.js"></script>
 </body>
 </html>
