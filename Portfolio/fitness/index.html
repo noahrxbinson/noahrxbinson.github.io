@@ -12,15 +12,32 @@
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 	
 </head>
-<body> 
+
 	<section id="container">
-	<header> 
+	<header id="ffc-logo"> 
 			<h1> Forward Fitness Center </h1>
 			
-			<img src="images/forward-fitness-logo.png"
-			alt="forward fitness club logo" height="220" width="297">
+			
+			<a href="index.html"> <img src="images/forward-fitness-logo.png"
+				alt="forward fitness club logo"></a>
 	</header>
-		<nav>
+	<body> 
+		
+		<!-- Mobile Nav-->
+
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About Us</a>
+				<a href="classes.html">Classes</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+		<nav class="tablet-desktop">
 			<ul>
 					<li><a href="index.html">Home </a></li>
 					<li><a href="about.html">About </a></li>
@@ -31,7 +48,7 @@
 			
 		</nav>
 		
-		
+		</section>
 		<!-- Hero Image -->
 		<section id="hero" class="Tablet-desktop">
 			<img src="images/hero-image.jpg" alt="left arm extended holding a weight">
@@ -52,7 +69,7 @@
 			<p>For more information about how to stay active visit <a href="https://www.hhs.gov/fitness/be-active/index.html" target="_blank"> U.S department of health and services</a>.</p>
 			<h3> Free one-week Trial membership!</h3>
 			<p> call us today to get started </p>
-			<p</a class="tel-link"><a href="tel=8145559608" (814) 555-9608></a></p>
+			<p></a class="tel-link"><a href="tel=8145559608" (814) 555-9608></a></p>
 
 			<h4>Fitness club hours:</h4>
 			<ul class="hours">
@@ -66,7 +83,10 @@
 		
 		
 			
-	</section>
+	
+	
+	
+	
 	  <section class="grid">
 		<figure class="frame">
 			<a href="classes.html"><img src="images/fitness-group.jpg" alt="group of fitness people"></a>
@@ -76,7 +96,7 @@
 			<a href="nutrition.html">
 				<img src="images/food-heart.jpg" alt="healthy food in the shape of a heart">
 			</a>
-			<figcaption class="pix-text"> Meal Plans</figcaption>
+			<figcaption class="pic-text"> Meal Plans</figcaption>
 		</figure>
 		<figure class="frame">
 			<a href="contact.html">
@@ -100,10 +120,14 @@
 
 </main>
 </section>
+
+
 	<footer> 
 	<p>&copy; Copyright 2023. All rights reserved, </p>
 	<P><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
 	
 	</footer>
+
+	<script src="scripts/script.js"></script>
 </body>
 </html>

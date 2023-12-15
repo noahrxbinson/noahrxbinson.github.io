@@ -12,19 +12,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
-<body> 
-	
-	<div id="container">
-	<header> 
-		<h1> Forward Fitness Center </h1>
-	</header>
-	
-		<header> 
+
+
+<header id="ffc-logo"> 
 			<h1> Forward Fitness Center </h1>
 			<a href="index.html"> <img src="images/forward-fitness-logo.png"
 			alt="forward fitness club logo"></a>
-		</header>
-		<nav>
+		
+</header>
+
+
+
+
+	<!-- Mobile Nav-->
+
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="classes.html">Classes</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+		<div id="container">
+		<nav class="tablet-desktop">
 		<ul>
 					<li><a href="index.html">Home </a></li>
 					<li><a href="about.html">About </a></li>
@@ -35,17 +50,12 @@
 		</nav>
 
         <!--classes hero image-->
-        <div id="hero" class="tablet-desktop">
+        <div  class="tablet-desktop">
         <img src="images/classes-hero-image.jpg" alt="group of fitness people">
         
         </div>
 	<main>
-		<video controls poster="images/hero-image.jpg">
-			<source src="media/ffc_video.mp4" type="video/mp4">
-			<source src="media/ffc_video.webm" type="video/webm">
-			<p>Your browser does not support the video element.</p>
-			
-		</video>
+		
 		
 		<div id="hero" class="mobile">
             <h3>Group Fitness Center</h3>
@@ -65,7 +75,6 @@
                 <th>Times</th>
                 <th>Instructor</th>
                 <th>Room</th>
-                </table>
             </tr>
             <tr><!--Row 2--> 
                 <td>Cardio</td>
@@ -76,9 +85,10 @@
             </tr>
             <tr><!--Row 3-->
                 <td>Boot Camp</td>
-                <td>ZTue, Thu</td>
+                <td>Tue, Thu</td>
                 <td>5:0am, 5:00pm</td>
                 <td>Taylor</td>
+                <td>A</td>
             </tr>
             <tr>
                 <td>Spinning</td>
@@ -116,7 +126,7 @@
 				Below is a sample of the type of music played duringa class workout.</h3>
 			<audio controls>
 				<source src="media/ffc_audio.mp3" type="audio/mp3">
-				<source src="media/ffc_audio.ogg" type="audio.ogg">
+				<source src="media/ffc_audio.ogg" type="audio/ogg">
 					<p>Your browser doesnt support the audio element.</p>
 			</audio>
 		</div>
@@ -124,8 +134,9 @@
 	<footer> 
 		<p> &copy; Copyright 2023. All rights reserved, </p>
 		<p> forwardfitness@club.net</p>
-	
+        <script src="scripts/script.js"></script>
 	</footer>
 	</div>
+
 </body>
 </html>
