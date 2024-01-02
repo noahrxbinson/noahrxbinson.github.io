@@ -86,6 +86,22 @@ img{
     display: block;
     margin-left: auto;
 }
+/*alleged hamburger css*/
+.mobile-nav a {
+    color: #fff;
+    font-family: 'Francis One', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
 nav{
   
@@ -104,7 +120,10 @@ nav li{
     text-align: center;
 }
 nav li a {
+    display: block;
+    color: #fff;
     padding: 0.5em 1em;
+    text-decoration: none;
 }
 
 nav li a:hover {
