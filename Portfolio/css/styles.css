@@ -153,23 +153,26 @@ a{
     font-weight: bold;
 }
 */
-.mobile{
-    display: block;
 
-}
 .lists{
     font-family: 'Pacifico', cursive;
     text-align: center;
 
 }
-/*mobile media query start*/
+.mobile {
+    display: block;
+}
+
+.tablet-desktop, #menu-links {
+    display: none;
+}/*mobile media query start*/
 @media screen and (max-width: 630px), print{
-    /*.tablet-desktop{
+    .tablet-desktop{
         display: block;
     }
-    .mobile{
+    .mobile, .mobile-nav {
         display: none;
-    }*/
+    }
 
 
     /*start of table styling for mobile viewport*/
