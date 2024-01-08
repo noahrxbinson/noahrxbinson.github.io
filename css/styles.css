@@ -80,27 +80,11 @@ img{
 .center {
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display:block;
 }
 .right {
     display: block;
     margin-left: auto;
-}
-/*alleged hamburger css*/
-.mobile-nav a {
-    color: #fff;
-    font-family: 'Francis One', sans-serif;
-    text-align: center;
-    font-size: 2em;
-    text-decoration: none;
-    padding: 3%;
-    display: block;
-}
-.mobile-nav a.menu-icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
 }
 
 nav{
@@ -120,10 +104,7 @@ nav li{
     text-align: center;
 }
 nav li a {
-    display: block;
-    color: #fff;
     padding: 0.5em 1em;
-    text-decoration: none;
 }
 
 nav li a:hover {
@@ -153,26 +134,23 @@ a{
     font-weight: bold;
 }
 */
+.mobile{
+    display: block;
 
+}
 .lists{
     font-family: 'Pacifico', cursive;
     text-align: center;
 
 }
-.mobile {
-    display: block;
-}
-
-.tablet-desktop, #menu-links {
-    display: none;
-}/*mobile media query start*/
+/*mobile media query start*/
 @media screen and (max-width: 630px), print{
-    .tablet-desktop{
+    /*.tablet-desktop{
         display: block;
     }
-    .mobile, .mobile-nav {
+    .mobile{
         display: none;
-    }
+    }*/
 
 
     /*start of table styling for mobile viewport*/
