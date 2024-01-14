@@ -15,17 +15,28 @@
 	
 	<img src="images/portfolio3.jpg" alt="a picture taken in photobooth " class="center">
 <body>
-	<nav>
-        <div class="lists">
-			<ul>
-
-			<li><a href="index.html">Home</a> &nbsp; &#9632; &nbsp;</li>
-			<li><a href="projects.html">Projects</a> &nbsp; &#9632; &nbsp; </li>
-			<li><a href="contact.html">Contact Me</a> &nbsp; &#9632; &nbsp;</li>
-			<li><a href="about.html">More about me</a></li>
-			</ul>
+	<nav class="mobilenav">
+		<div id="menu-links">
+			<a href="index.html" >Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="contact.html">Contact Me</a>
+			<a href="about.html">More about me</a>
+			<a href="new.html">The steps of meditation</a>
 		</div>
-	</nav>
+	<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;<div>
+		</a>
+	</nav>	
+				<nav class="tablet-desktop">
+		<ul>
+
+		<li><a href="index.html">Home</a> &nbsp; &#9632; &nbsp;</li>
+		<li><a href="projects.html">Projects</a> &nbsp; &#9632; &nbsp; </li>
+		<li><a href="contact.html">Contact Me</a> &nbsp; &#9632; &nbsp;</li>
+		<li><a href="about.html">More about me</a></li>
+		<li><a href="new.html">The steps of meditation</a></li>
+		</ul>
+</nav>
 	
 	<main>
 		
@@ -61,6 +72,8 @@
 	
 	
 	</footer>
+	<script src="scripts/script.js"></script>
+
 </div>
 </body>
 </html>
