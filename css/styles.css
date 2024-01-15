@@ -11,6 +11,9 @@ body, header, nav, main, footer, h1, div, img, a, ul, figure, figcaption, articl
 
 
 }
+main{
+	text-align: center;
+}
 .color{
     color: #ccc;
 
